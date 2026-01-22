@@ -132,12 +132,7 @@ def climate_geography_influence(df, column):
                       Max_temperature_C, and Rainfall means
     """
     # Group by specified column and aggregate
-    result = df.groupby(column).agg({
-        'Elevation': 'mean',
-        'Min_temperature_C': 'mean',
-        'Max_temperature_C': 'mean',
-        'Rainfall': 'mean'
-    })
+    result = df.groupby(column)[['Elevation', 'Min_temperature_C', 'Max_temperature_C', 'Rainfall']].mean()
     
     return result
 ### END FUNCTION
