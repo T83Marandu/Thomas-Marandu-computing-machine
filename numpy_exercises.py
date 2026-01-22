@@ -67,8 +67,12 @@ print("The reshape(4, 7) function reshapes the 1D array into a 2D array with 4 r
 print("(weeks) and 7 columns (days). sum(axis=1) calculates the sum along the rows")
 print("(each week), providing the total bird sightings per week.")
 
-bird_sightings = np.array([3, 4, 2, 5, 1, 0, 4, 3, 5, 2, 1, 7, 8, 1, 2, 3, 4, 1, 
-                          0, 5, 6, 2, 3, 4, 1, 4, 6, 7])
+bird_sightings = np.array([
+    3, 4, 2, 5, 1, 0, 4,  # Week 1
+    3, 5, 2, 1, 7, 8, 1,  # Week 2
+    2, 3, 4, 1, 0, 5, 6,  # Week 3
+    2, 3, 4, 1, 4, 6, 7   # Week 4
+])
 reshaped_sightings = bird_sightings.reshape(4, 7)
 total_sightings_per_week = reshaped_sightings.sum(axis=1)
 print(f"\nTotal sightings per week: {total_sightings_per_week}")
