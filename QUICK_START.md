@@ -14,7 +14,7 @@ Copy all functions from **`function_implementations.py`** into your notebook.
 
 ## Option 2: Copy Functions One by One
 
-### Challenge 1: Explore Crop Distribution
+### Exercise 1: Explore Crop Distribution
 
 ```python
 ### START FUNCTION
@@ -35,7 +35,7 @@ explore_crop_distribution(MD_agric_df, "tea")
 
 ---
 
-### Challenge 2: Analyse Soil Fertility
+### Exercise 2: Analyse Soil Fertility
 
 ```python
 ### START FUNCTION
@@ -53,7 +53,7 @@ analyse_soil_fertility(MD_agric_df)
 
 ---
 
-### Challenge 3: Climate and Geography Influence
+### Exercise 3: Climate and Geography Influence
 
 ```python
 ### START FUNCTION
@@ -76,7 +76,7 @@ climate_geography_influence(MD_agric_df, 'Crop_type')
 
 ---
 
-### Challenge 4: Find Ideal Fields
+### Exercise 4: Find Ideal Fields
 
 ```python
 ### START FUNCTION
@@ -98,7 +98,7 @@ type(find_ideal_fields(MD_agric_df))
 
 ---
 
-### Challenge 5: Find Good Conditions
+### Exercise 5: Find Good Conditions
 
 ```python
 ### START FUNCTION
@@ -190,7 +190,7 @@ with engine.connect() as connection:
 1. Import libraries: `pandas`, `sqlalchemy`
 2. Load data using SQL query above
 3. Clean data using cleanup code above
-4. Copy and paste all 5 function implementations
+4. Copy and paste all 5 exercise function implementations (Exercise 1-5)
 5. Test each function with the test cases provided
 6. Submit your notebook
 

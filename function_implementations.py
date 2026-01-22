@@ -3,6 +3,10 @@ Maji Ndogo Agriculture Analysis - Function Implementations
 Copy and paste these functions into your notebook to complete the challenges.
 """
 
+# ============================================================================
+# EXERCISE 1: Explore Crop Distribution
+# ============================================================================
+
 ### START FUNCTION
 def explore_crop_distribution(df, crop_filter):
     """
@@ -27,6 +31,10 @@ def explore_crop_distribution(df, crop_filter):
 ### END FUNCTION
 
 
+# ============================================================================
+# EXERCISE 2: Analyse Soil Fertility
+# ============================================================================
+
 ### START FUNCTION
 def analyse_soil_fertility(df):
     """
@@ -44,6 +52,10 @@ def analyse_soil_fertility(df):
     return result
 ### END FUNCTION
 
+
+# ============================================================================
+# EXERCISE 3: Climate and Geography Influence
+# ============================================================================
 
 ### START FUNCTION
 def climate_geography_influence(df, column):
@@ -69,6 +81,10 @@ def climate_geography_influence(df, column):
     return result
 ### END FUNCTION
 
+
+# ============================================================================
+# EXERCISE 4: Find Ideal Fields
+# ============================================================================
 
 ### START FUNCTION
 def find_ideal_fields(df):
@@ -99,6 +115,10 @@ def find_ideal_fields(df):
     return top_crop
 ### END FUNCTION
 
+
+# ============================================================================
+# EXERCISE 5: Find Good Conditions
+# ============================================================================
 
 ### START FUNCTION
 def find_good_conditions(df, crop_type):
