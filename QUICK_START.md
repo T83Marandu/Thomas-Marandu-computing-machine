@@ -132,10 +132,23 @@ find_good_conditions(MD_agric_df, "tea").shape
 
 ⚠️ **IMPORTANT**: Run this code immediately after loading your data and before running any exercises!
 
-You can also use the standalone file: **`data_cleanup.py`**
+### Option 1: Complete Cleanup (includes Field_ID drop)
+Use the standalone file: **`data_cleanup.py`** - includes all steps from data loading through cleanup.
+
+### Option 2: For "Insert your code here" Section
+If your notebook already has the Field_ID drop step, use: **`insert_cleanup_code.py`**
+
+This is for when you see:
+```python
+# Insert your code here
+```
+
+Just copy the code from `insert_cleanup_code.py` into that section.
+
+### Complete Cleanup Code:
 
 ```python
-# Step 1: Drop Field_ID columns
+# Step 1: Drop Field_ID columns (skip if already done in your notebook)
 MD_agric_df.drop(columns='Field_ID', inplace=True)
 
 # Fix column names
