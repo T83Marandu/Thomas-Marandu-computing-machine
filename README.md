@@ -150,6 +150,25 @@ The system automatically handles:
 - Column name inconsistencies
 - Data type conversions
 
+### Quick Data Cleanup
+
+If you need to manually clean your data, use the standalone **`data_cleanup.py`** file:
+
+```python
+# Simply copy and paste the code from data_cleanup.py after loading your data
+# Or import and use the load_and_clean_data() function from maji_ndogo_analysis.py
+```
+
+## Files in This Repository
+
+- **`maji_ndogo_analysis.py`** - Complete Python module with all functions
+- **`maji_ndogo_analysis.ipynb`** - Jupyter notebook with examples
+- **`function_implementations.py`** - All 5 exercises ready to copy-paste
+- **`data_cleanup.py`** - Standalone data cleanup code
+- **`QUICK_START.md`** - Step-by-step guide for students
+- **`test_maji_ndogo.py`** - Test suite
+- **`requirements.txt`** - Python dependencies
+
 ## Average Crop Yields (tons/Ha)
 
 - Coffee: 1.5

@@ -6,6 +6,15 @@ This guide provides the essential code you need to complete the Maji Ndogo agric
 
 ---
 
+## 📋 Quick Links
+
+1. **[Data Cleanup Code](#data-cleanup-code)** - Start here! Clean your data first
+2. **[SQL Query for Data Loading](#sql-query-for-data-loading)** - Load data from database
+3. **[Exercise Functions](#option-2-copy-functions-one-by-one)** - Copy Exercise 1-5 functions
+4. **[Complete Workflow](#complete-workflow)** - Step-by-step instructions
+
+---
+
 ## Option 1: Use the Complete Functions File
 
 Copy all functions from **`function_implementations.py`** into your notebook.
@@ -121,10 +130,12 @@ find_good_conditions(MD_agric_df, "tea").shape
 
 ## Data Cleanup Code
 
-Before running the challenges, make sure your data is cleaned:
+⚠️ **IMPORTANT**: Run this code immediately after loading your data and before running any exercises!
+
+You can also use the standalone file: **`data_cleanup.py`**
 
 ```python
-# Drop Field_ID columns
+# Step 1: Drop Field_ID columns
 MD_agric_df.drop(columns='Field_ID', inplace=True)
 
 # Fix column names
@@ -151,6 +162,11 @@ if 'Crop_type' in MD_agric_df.columns:
 # Fix negative elevations
 if 'Elevation' in MD_agric_df.columns:
     MD_agric_df['Elevation'] = MD_agric_df['Elevation'].abs()
+
+# Verify cleanup
+print("✓ Data cleanup complete!")
+print(f"Unique crop types: {len(MD_agric_df['Crop_type'].unique())}")
+print(f"Min elevation: {MD_agric_df['Elevation'].min()}")
 ```
 
 ---
